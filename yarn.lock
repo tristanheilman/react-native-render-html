@@ -20924,16 +20924,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-native-accessibility-engine@npm:^0.4.1":
-  version: 0.4.4
-  resolution: "react-native-accessibility-engine@npm:0.4.4"
+"react-native-accessibility-engine@npm:^3.2.0":
+  version: 3.2.0
+  resolution: "react-native-accessibility-engine@npm:3.2.0"
   dependencies:
     lodash.groupby: ^4.6.0
-    react-test-renderer: ^17.0.1
   peerDependencies:
     react: "*"
     react-native: "*"
-  checksum: 6a4a8eecbf08cbefb5f714fbaa15ea77f700ec59e2b5661a3e01fcc8126564088fe00ac484905b85b0065f2785a49fe5ea0574f3e1a8cd8dc82d5a4ffd92d913
+    react-test-renderer: "*"
+  checksum: 84cf65599080d92b54813c49970202b9056e47773533dc6bcc4099724ce13a47f5408713a82e6033694bbf2edb01c976608826c65b0ea45c17a675824b799cf8
   languageName: node
   linkType: hard
 
@@ -21133,7 +21133,7 @@ __metadata:
     ramda: ^0.27.2
     react: 18.3.1
     react-native: 0.75.5
-    react-native-accessibility-engine: ^0.4.1
+    react-native-accessibility-engine: ^3.2.0
     react-native-builder-bob: ^0.30.3
     react-performance-testing: ^1.2.3
     react-test-renderer: ^18.3.1
@@ -21461,7 +21461,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-test-renderer@npm:17.0.2, react-test-renderer@npm:^17.0.1, react-test-renderer@npm:~17.0.1":
+"react-test-renderer@npm:17.0.2, react-test-renderer@npm:~17.0.1":
   version: 17.0.2
   resolution: "react-test-renderer@npm:17.0.2"
   dependencies:

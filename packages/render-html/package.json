@@ -63,7 +63,7 @@
     "prettier": "^2.7.1",
     "react": "18.3.1",
     "react-native": "0.75.5",
-    "react-native-accessibility-engine": "^0.4.1",
+    "react-native-accessibility-engine": "^3.2.0",
     "react-native-builder-bob": "^0.30.3",
     "react-performance-testing": "^1.2.3",
     "react-test-renderer": "^18.3.1",
