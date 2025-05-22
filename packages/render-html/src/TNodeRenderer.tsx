@@ -1,5 +1,9 @@
 import React, { memo, ReactElement } from 'react';
-import { TDefaultRenderer, TNodeRendererProps } from './shared-types';
+import {
+  TDefaultRenderer,
+  TDefaultRendererProps,
+  TNodeRendererProps
+} from './shared-types';
 import { useSharedProps } from './context/SharedPropsProvider';
 import {
   TText,
@@ -112,13 +116,18 @@ const TNodeRenderer = memo(function MemoizedTNodeRenderer(
       }
       break;
   }
-  const renderFn =
-    tnode.type === 'block' || tnode.type === 'document'
-      ? renderBlockContent
-      : renderTextualContent;
-  return Renderer === null
-    ? renderFn(assembledProps)
-    : React.createElement(Renderer as any, assembledProps);
+  if (Renderer !== null) {
+    return React.createElement(Renderer as any, assembledProps);
+  }
+  if (tnode.type === 'block' || tnode.type === 'document') {
+    return renderBlockContent(assembledProps as TDefaultRendererProps<TBlock>);
+  } else if (tnode.type === 'phrasing') {
+    return renderTextualContent(
+      assembledProps as TDefaultRendererProps<TPhrasing>
+    );
+  } else {
+    return renderTextualContent(assembledProps as TDefaultRendererProps<TText>);
+  }
 });
 
 export {

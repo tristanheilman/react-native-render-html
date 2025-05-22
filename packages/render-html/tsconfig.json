@@ -3,7 +3,9 @@
   "extends": "../../tsconfig-base.json",
   "compilerOptions": {
     "experimentalDecorators": true,
-    "emitDecoratorMetadata": true
+    "emitDecoratorMetadata": true,
+    "types": ["react", "react-native", "jest"]
   },
-  "include": ["src", "jest"]
+  "include": ["src", "jest"],
+  "exclude": ["node_modules", "lib", "**/__tests__/*"]
 }

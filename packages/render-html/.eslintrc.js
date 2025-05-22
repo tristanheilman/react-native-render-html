@@ -11,6 +11,12 @@ module.exports = {
           order: 'alphabetically'
         }
       }
+    ],
+    'react-hooks/exhaustive-deps': [
+      'warn',
+      {
+        additionalHooks: '(useMyCustomHook|useMyOtherHook)'
+      }
     ]
   }
 };
