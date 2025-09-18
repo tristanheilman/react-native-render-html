@@ -1,6 +1,6 @@
 {
   "name": "@tristanheilman/react-native-render-html",
-  "version": "6.5.1",
+  "version": "6.5.2",
   "author": "Tristan Heilman <tristanheilman@outlook.com> (github.com/tristanheilman)",
   "license": "BSD-2-Clause",
   "description": "A fork of the hackable, full-featured Open Source HTML rendering solution for React Native.",
@@ -9,8 +9,12 @@
   "react-native": "src/",
   "files": [
     "lib",
-    "src",
-    "react-native-render-html.podspec"
+    "babel.config.js",
+    "LICENSE",
+    "package.json",
+    "react-native-render-html.podspec",
+    "README.md",
+    "tsconfig.json"
   ],
   "homepage": "https://github.com/tristanheilman/react-native-render-html",
   "bugs": {
