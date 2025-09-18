@@ -1,6 +1,6 @@
 {
   "name": "@tristanheilman/react-native-render-html",
-  "version": "6.5.0",
+  "version": "6.5.1",
   "author": "Tristan Heilman <tristanheilman@outlook.com> (github.com/tristanheilman)",
   "license": "BSD-2-Clause",
   "description": "A fork of the hackable, full-featured Open Source HTML rendering solution for React Native.",
